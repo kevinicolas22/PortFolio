@@ -155,6 +155,10 @@
         background: #111;
         padding-top: 80px;
         text-align: center;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
     }
     .navbar .menu li{
         display:block;
