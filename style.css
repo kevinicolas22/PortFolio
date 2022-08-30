@@ -127,20 +127,12 @@
     display: none;
 }
 
-/*sessão sobre*/
+/*todos os códigos similares*/
 section{
     padding: 100px 0;
 }
-.about{
-    font-family: 'Roboto', sans-serif;
-}
-.about .about-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.about .title{
+
+section .title{
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     font-size: 40px;
@@ -150,7 +142,7 @@ section{
     position: relative;
 }
 
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0;
@@ -160,8 +152,8 @@ section{
     background: #111;
     transform: translateX(-50%);
 }
-.about .title::after{
-    content: "Who am I";
+
+section .title::after{
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -170,6 +162,23 @@ section{
     color: #f1b8ff;
     padding: 5px;
     transform: translateX(-50%);
+}
+.about, .projects .skills{
+    font-family: 'Roboto', sans-serif;
+}
+.about .about-content,
+.projects .proj-content, .skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*sessão sobre*/
+
+
+.about .title::after{
+    content: "Who i'm?";
 }
 .about .about-content .left{
     width: 45%;
@@ -210,7 +219,59 @@ section{
     object-fit: cover;
     border-radius: 6px;
 }
+
+/*sessão projetos*/
+.projects{
+    background: #111;
+    color: #fff;
+}
+.projects .title::before{
+    background: #fff;
+}
+.projects .title::after{
+    background: #111;
+    content: "Developed By Me";
+}
+.projects .proj-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.projects .proj-content .card:hover{
+    background: #f1b8ff;
+}
+.servprojectsices .proj-content .card .box{
+    transition: all 0.3s ease;
+}
+.projects .proj-content .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .proj-content .card ion-icon{
+    font-size: 70px;
+    color: #f1b8ff;
+}
+.projects .proj-content .card:hover ion-icon{
+    color: #fff;
+}
+.projects .proj-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/*Skills */
+.skills .title::after{
+    content: "That I Own";
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
 /*responsivo */
+
 @media (max-width:1300px){
     .navbar .max-width{
         margin-left: 0;
@@ -280,6 +341,10 @@ section{
       .about .about-content .right{
         flex: 100%;
     }
+    .projects .proj-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 690px){
     .home .home-content .text-2{
@@ -290,6 +355,9 @@ section{
     }
     .home .home-content a{
         font-size: 20px;
+    }
+    .projects .proj-content .card{
+        width: 100%;
     }
 }
 @media (max-width: 500px){
