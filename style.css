@@ -163,11 +163,11 @@ section .title::after{
     padding: 5px;
     transform: translateX(-50%);
 }
-.about, .projects .skills{
+.about, .projects, .skills, .contact{
     font-family: 'Roboto', sans-serif;
 }
 .about .about-content,
-.projects .proj-content, .skills .skills-content{
+.projects .proj-content, .skills .skills-content, .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -240,6 +240,7 @@ section .title::after{
     padding: 20px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
 }
 .projects .proj-content .card:hover{
     background: #f1b8ff;
@@ -269,7 +270,179 @@ section .title::after{
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
+    font-family: 'Roboto', sans-serif;
 }
+.skills .skills-content .left .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: #f1b8ff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #f1b8ff;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: #f1b8ff;
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #f1b8ff;
+}
+.skills .skills-content .right .JavaScript::before{
+    width: 93%;
+}
+.skills .skills-content .right .HTML::before{
+    width: 85%;
+}
+.skills .skills-content .right .CSS::before{
+    width: 87%;
+}
+.skills .skills-content .right .Python::before{
+    width: 47%;
+}
+.skills .skills-content .right .C::before{
+    width: 42%;
+}
+
+/*  sessão Contato  */
+.contact{
+    background-color: #111;
+}
+.contact .title{
+    color: #fff;
+}
+.contact .title::before{
+background-color: #fff;
+}
+.contact .title::after{
+    content: "Talk With Me";
+    background-color: #111;
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content{
+    align-items: flex-start;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px
+}
+.contact .contact-content .row .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .row .info .sub-title{
+    color: #333;
+}
+.contact .contact-content .row ion-icon{
+    font-size: 25px;
+    color: #f1b8ff;
+}
+.contact .rigth form .fields{
+    display: flex;
+}
+.contact .rigth form .field,
+.contact .rigth form .fields .field{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+}
+.contact .rigth form .field input,
+.contact .rigth form .textarea textarea{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Roboto',sans-serif;
+}
+.contact .rigth form .name{
+    margin-right: 10px;
+}
+.contact .rigth form .email{
+    margin-left: 10px;
+}
+.contact .rigth form .textarea{
+    width: 100%;
+    height: 80px;
+}
+.contact .rigth form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .rigth form .button{
+    width: 170px;
+    height: 47px;
+}
+.contact .rigth form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #f1b8ff;
+    background: #f1b8ff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact .rigth form .button button:hover{
+    color: #f1b8ff;
+    background: none;
+}
+
 /*responsivo */
 
 @media (max-width:1300px){
@@ -344,6 +517,10 @@ section .title::after{
     .projects .proj-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
+    }
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 35px;
     }
 }
 @media (max-width: 690px){
