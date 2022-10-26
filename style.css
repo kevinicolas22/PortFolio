@@ -205,7 +205,7 @@ section .title::after{
 
 
 .about .title::after{
-    content: "Who i'm?";
+    content: "Quem eu sou?";
 }
 .about .about-content .left{
     width: 45%;
@@ -257,7 +257,7 @@ section .title::after{
 }
 .projects .title::after{
     background: #111;
-    content: "Developed By Me";
+    content: "Feitos Por Mim";
 }
 .projects .proj-content .card{
     width: calc(33% - 20px);
@@ -293,7 +293,7 @@ section .title::after{
 
 /*Skills */
 .skills .title::after{
-    content: "That I Own";
+    content: "Que Possuo";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
