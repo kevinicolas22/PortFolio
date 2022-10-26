@@ -112,6 +112,7 @@
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid #f1b8ff;
+    transition: all 0.3s ease;
 }
 
 .home .home-content a:hover{
@@ -163,7 +164,7 @@ section .title::after{
     padding: 5px;
     transform: translateX(-50%);
 }
-.about, .projects, .skills, .contact{
+.about, .projects, .skills, .contact, footer{
     font-family: 'Roboto', sans-serif;
 }
 .about .about-content,
@@ -355,39 +356,52 @@ background-color: #fff;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
+    color: #fff;
 }
 .contact .contact-content{
     align-items: flex-start;
+    
 }
 .contact .contact-content .left p{
     text-align: justify;
+    
 }
 .contact .contact-content .text{
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
+    
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
+    background-color: #222;
+    border-radius: 8px;
+    color: #f1b8ff;
+       
 }
 .contact .contact-content .row{
     display: flex;
     height: 65px;
     align-items: center;
+    
 }
 .contact .contact-content .row .info{
     margin-left: 30px
+    
 }
 .contact .contact-content .row .info .head{
     font-weight: 500;
+    
 }
 .contact .contact-content .row .info .sub-title{
-    color: #333;
+    color: #fff;
+   
 }
 .contact .contact-content .row ion-icon{
     font-size: 25px;
     color: #f1b8ff;
 }
+
 .contact .rigth form .fields{
     display: flex;
 }
@@ -424,7 +438,7 @@ background-color: #fff;
 }
 .contact .rigth form .button{
     width: 170px;
-    height: 47px;
+    height: 45px;
 }
 .contact .rigth form .button button{
     width: 100%;
@@ -437,10 +451,27 @@ background-color: #fff;
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin: -7px;
+    margin-left: 2px ;
 }
 .contact .rigth form .button button:hover{
     color: #f1b8ff;
     background: none;
+}
+
+/*  sessão footer  */
+footer{
+    background: #fff;
+    padding: 20px 23px;
+    color: #111;
+    text-align: center;
+}
+footer span a{
+    color: #f1b8ff;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
 }
 
 /*responsivo */
@@ -518,7 +549,7 @@ background-color: #fff;
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column{
+    .skills .skills-content .column, .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
     }
