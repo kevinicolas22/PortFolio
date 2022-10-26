@@ -351,19 +351,19 @@ section .title::after{
     background: #f1b8ff;
 }
 .skills .skills-content .right .JavaScript::before{
-    width: 93%;
+    width: 1%;
 }
 .skills .skills-content .right .HTML::before{
-    width: 85%;
+    width: 20%;
 }
 .skills .skills-content .right .CSS::before{
-    width: 87%;
+    width: 11%;
 }
 .skills .skills-content .right .Python::before{
-    width: 47%;
+    width: 37%;
 }
 .skills .skills-content .right .C::before{
-    width: 42%;
+    width: 31%;
 }
 
 /*  sessão Contato  */
