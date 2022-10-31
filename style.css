@@ -257,7 +257,7 @@ section .title::after{
 }
 .projects .title::after{
     background: #111;
-    content: "Feitos Por Mim";
+    content: "Desenvolvidos";
 }
 .projects .proj-content .card{
     width: calc(33% - 20px);
@@ -293,7 +293,7 @@ section .title::after{
 
 /*Skills */
 .skills .title::after{
-    content: "Que Possuo";
+    content: "Adquiridas";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -377,7 +377,7 @@ section .title::after{
 background-color: #fff;
 }
 .contact .title::after{
-    content: "Talk With Me";
+    content: "Fale Comigo";
     background-color: #111;
 }
 .contact .contact-content .column{
@@ -488,7 +488,7 @@ background-color: #fff;
 /*  sessão footer  */
 footer{
     background: #fff;
-    padding: 20px 23px;
+    padding: 2px 23px;
     color: #111;
     text-align: center;
 }
