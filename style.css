@@ -546,7 +546,7 @@ footer span a:hover{
 }
 @media (max-width:947px){
     .max-width{
-        max-width: 800px;
+        max-width: 900px;
         padding: 0 50px;
     }
     .menu-btn{
@@ -576,10 +576,11 @@ footer span a:hover{
         font-size: 25px;
     }
     .home .home-content .text-2{
-        font-size: 70px;
+        font-size: 50px;
     }
+
     .home .home-content .text-3{
-        font-size: 35px;
+        font-size: 25px;
     }
     .home .home-content a{
         font-size: 23px;
@@ -610,10 +611,10 @@ footer span a:hover{
 }
 @media (max-width: 690px){
     .home .home-content .text-2{
-        font-size: 20px;
+        font-size: 40px;
     }
     .home .home-content .text-3{
-        font-size: 10px;
+        font-size: 27px;
     }
     .home .home-content a{
         font-size: 20px;
@@ -627,9 +628,12 @@ footer span a:hover{
 }
 @media (max-width: 500px){
     .home .home-content .text-2{
-        font-size: 50px;
+        font-size: 30px;
     }
     .home .home-content .text-3{
-        font-size: 27px;
+        font-size: 20px;
+    }
+    .about .about-content .text{
+       font-size: 30px;
     }
 }
