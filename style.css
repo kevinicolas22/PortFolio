@@ -456,7 +456,7 @@ background-color: #fff;
 }
 .contact .rigth form .textarea{
     width: 100%;
-    height: 80px;
+    height: 65px;
 }
 .contact .rigth form .textarea textarea{
     padding-top: 10px;
@@ -477,10 +477,32 @@ background-color: #fff;
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin: -7px;
+    margin: -1px;
     margin-left: 2px ;
 }
 .contact .rigth form .button button:hover{
+    color: #f1b8ff;
+    background: none;
+}
+.contact .rigth form .buttonreset{
+    width: 170px;
+    height: 45px;
+}
+.contact .rigth form .buttonreset button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #f1b8ff;
+    background: #f1b8ff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+   margin: 20px;
+    margin-left: 190px ;
+}
+.contact .rigth form .buttonreset button:hover{
     color: #f1b8ff;
     background: none;
 }
@@ -488,7 +510,7 @@ background-color: #fff;
 /*  sessão footer  */
 footer{
     background: #fff;
-    padding: 2px 23px;
+    padding: 3px 2px;
     color: #111;
     text-align: center;
 }
