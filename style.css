@@ -534,6 +534,7 @@ footer span a:hover{
         width: 350px;
         height: 350px;
     }
+ /*parei aqui parte de foto pra tela do pc*/   
     
 }
 @media (max-width:991px){
@@ -541,6 +542,7 @@ footer span a:hover{
         margin-left: 0;
         padding-left: 0 50px;
     }
+    
 }
 @media (max-width:947px){
     .max-width{
@@ -608,10 +610,10 @@ footer span a:hover{
 }
 @media (max-width: 690px){
     .home .home-content .text-2{
-        font-size: 40px;
+        font-size: 20px;
     }
     .home .home-content .text-3{
-        font-size: 27px;
+        font-size: 10px;
     }
     .home .home-content a{
         font-size: 20px;

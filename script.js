@@ -16,9 +16,9 @@ $(document).ready(function(){
      });
 
      var typed = new Typed(".typing", {
-         strings:["Desenvolvedor", "Front-End", "Back-End", "Freelancer"],
-         typeSpeed:180,
-         backSpeed:90,
+         strings:["Desenvolvedor", "Front-End", "Back-End",],
+         typeSpeed:18,
+         backSpeed:9,
          loop:true
      });
      var typed = new Typed(".typing-2", {
