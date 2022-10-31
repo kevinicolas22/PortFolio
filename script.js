@@ -17,14 +17,14 @@ $(document).ready(function(){
 
      var typed = new Typed(".typing", {
          strings:["Desenvolvedor", "Front-End", "Back-End", "Freelancer"],
-         typeSpeed:50,
-         backSpeed:50,
+         typeSpeed:180,
+         backSpeed:90,
          loop:true
      });
      var typed = new Typed(".typing-2", {
-        strings:["Desenvolvedor", "Front-End", "Back-End"],
-        typeSpeed:50,
-        backSpeed:50,
+        strings:["HTML", "CSS", "JavaScript", "Python", "C"],
+        typeSpeed:180,
+        backSpeed:90,
         loop:true
     });
 

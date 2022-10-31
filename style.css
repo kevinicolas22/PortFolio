@@ -463,7 +463,7 @@ background-color: #fff;
     resize: none;
 }
 .contact .rigth form .button{
-    width: 170px;
+    width: 130px;
     height: 45px;
 }
 .contact .rigth form .button button{
@@ -485,7 +485,7 @@ background-color: #fff;
     background: none;
 }
 .contact .rigth form .buttonreset{
-    width: 170px;
+    width: 130px;
     height: 45px;
 }
 .contact .rigth form .buttonreset button{
@@ -500,7 +500,7 @@ background-color: #fff;
     cursor: pointer;
     transition: all 0.3s ease;
    margin: 20px;
-    margin-left: 190px ;
+    margin-left: 140px ;
 }
 .contact .rigth form .buttonreset button:hover{
     color: #f1b8ff;
@@ -534,6 +534,7 @@ footer span a:hover{
         width: 350px;
         height: 350px;
     }
+    
 }
 @media (max-width:991px){
     .navbar .max-width{
@@ -602,21 +603,24 @@ footer span a:hover{
         margin-bottom: 35px;
     }
     footer{
-        margin-top: 15px;
+        margin-top: -25px;
     }
 }
 @media (max-width: 690px){
     .home .home-content .text-2{
-        font-size: 60px;
+        font-size: 40px;
     }
     .home .home-content .text-3{
-        font-size: 32px;
+        font-size: 27px;
     }
     .home .home-content a{
         font-size: 20px;
     }
     .projects .proj-content .card{
         width: 100%;
+    }
+    .home .home-content .text{
+        font-size: 50px;
     }
 }
 @media (max-width: 500px){
