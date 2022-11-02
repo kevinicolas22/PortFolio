@@ -579,16 +579,9 @@ footer span a:hover{
     .about .about-content .text{
        font-size: 30px;
     }
-    .contact .contact-content .right{
-        margin: 5px;
-     }
-     .contact .contact-content .right .icons {
-         margin: 10px -5px;
-         background-color: #222;
-         border-radius: 8px;
-         color: #f1b8ff;
-         width: 390px;
-            
-     }
+    .contact .contact-content .right .icons {
+        width: 340px;
+           
+    }
     
 }
