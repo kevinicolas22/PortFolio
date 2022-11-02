@@ -571,7 +571,7 @@ footer span a:hover{
         font-size: 50px;
     }
     .about .title::after{
-        margin: 90px 0 -25px 0;
+        margin: 0 0 -32px 0;
         background: none;
     }
     
