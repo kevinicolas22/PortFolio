@@ -461,12 +461,14 @@ footer span a:hover{
     .navbar .max-width{
         margin-left: 0;
     }
+    
 }
 @media (max-width:1104px){
     .about .about-content .left img{
         width: 350px;
         height: 350px;
     }
+   
     
 }
 @media (max-width:991px){
@@ -474,6 +476,7 @@ footer span a:hover{
         margin-left: 0;
         padding-left: 0 50px;
     }
+    
     
 }
 @media (max-width:947px){
@@ -538,21 +541,25 @@ footer span a:hover{
         margin-bottom: 35px;
     }
     .contact .contact-content .right{
-       margin: -50px;
-       margin-top: 5px;
-    }
+        margin: -30px 90px 5px -40px;
+        margin-top: -5px;
+       
+     }
     .contact .contact-content .right .icons {
         margin: 10px -5px;
-        background-color: #222;
-        border-radius: 8px;
-        color: #f1b8ff;
-        width: 285px;
+        width: 800px;
            
     }
 
     footer{
         margin-top: -25px;
     }
+
+}
+@media (max-width:850px){
+    .contact .contact-content .right .icons {
+        width: 650px;
+}
 }
 @media (max-width: 690px){
     .home .home-content .text-2{
@@ -571,11 +578,20 @@ footer span a:hover{
         font-size: 50px;
     }
     .about .title::after{
-        margin: 0 0 -36px 0;
-        background: none;
-    }
-    
-    
+        margin-top: 0 0 -19px 0;
+        background: #fff;
+        width: 150px;
+    }    
+     .contact .contact-content .right .icons {
+         width: 550px;
+             
+     }   
+}
+@media (max-width:600px){
+ 
+    .contact .contact-content .right .icons {
+        width: 450px;
+}
 }
 @media (max-width: 500px){
     .home .home-content .text-2{
@@ -587,5 +603,13 @@ footer span a:hover{
     .about .about-content .text{
        font-size: 30px;
     }
-
+    .contact .contact-content .right .icons {
+        width: 380px;
+        
+    }
+}
+@media (max-width: 450px){
+    .contact .contact-content .right .icons {
+        width: 220px;    
+    }
 }

@@ -22,7 +22,7 @@ $(document).ready(function(){
          loop:true
      });
      var typed = new Typed(".typing-2", {
-        strings:["HTML", "CSS", "JavaScript", "Python", "C"],
+        strings:["HTML", "CSS", "JS", "Python", "C", "Git"],
         typeSpeed:180,
         backSpeed:90,
         loop:true
