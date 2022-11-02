@@ -570,6 +570,10 @@ footer span a:hover{
     .home .home-content .text{
         font-size: 50px;
     }
+    .about .title::after{
+        margin: 90px 0 -25px 0;
+        background: none;
+    }
     
     
 }
@@ -582,10 +586,6 @@ footer span a:hover{
     }
     .about .about-content .text{
        font-size: 30px;
-    }
-    .about .title::after{
-        margin: 90px 0 -25px 0;
-        background: none;
     }
 
 }
