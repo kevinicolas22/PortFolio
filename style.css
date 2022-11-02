@@ -558,13 +558,11 @@ footer span a:hover{
         margin-bottom: 35px;
     }
     .contact .contact-content .right{
-        margin: -30px 90px 5px -40px;
-        margin-top: -5px;
-       
-     }
+        margin-left: -40px;
+        margin-top: -30px;
+         }
     .contact .contact-content .right .icons {
-        margin: 10px -5px;
-        width: 800px;
+        width: 900px;
            
     }
 
@@ -595,7 +593,6 @@ footer span a:hover{
         font-size: 50px;
     }
     .about .title::after{
-        margin-top: 0 0 -19px 0;
         background: #fff;
         width: 150px;
     }    
@@ -625,8 +622,26 @@ footer span a:hover{
         
     }
 }
-@media (max-width: 450px){
+@media (max-width: 420px){
+    .contact .contact-content .right .icons{
+        width: 300px;
+    }
+}
+@media (max-width: 400px){
+    .contact .contact-content .right .icons{
+        width: 260px;
+    }
+}
+@media (max-width: 380px){
     .contact .contact-content .right .icons {
-        width: 220px;    
+        width: 260px;    
+    }
+}
+@media (max-width: 320px){
+    .contact .title::after{
+        width: 120px;
+    }
+    .contact .contact-content .left .icons, .contact .contact-content .right .icons {
+        width: 210px;    
     }
 }
