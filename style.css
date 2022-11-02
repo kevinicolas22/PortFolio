@@ -533,19 +533,20 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column, .contact .contact-content .column{
+    .skills .skills-content .column, .contact .contact-content .column, .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
     }
     .contact .contact-content .right{
-       margin: 5px;
+       margin: -50px;
+       margin-top: 5px;
     }
     .contact .contact-content .right .icons {
         margin: 10px -5px;
         background-color: #222;
         border-radius: 8px;
         color: #f1b8ff;
-        width: 390px;
+        width: 330px;
            
     }
     footer{
@@ -568,10 +569,7 @@ footer span a:hover{
     .home .home-content .text{
         font-size: 50px;
     }
-    .contact .contact-content .right .icons {
-        width: 34px;
-           
-    }
+    
     
 }
 @media (max-width: 500px){
@@ -583,10 +581,6 @@ footer span a:hover{
     }
     .about .about-content .text{
        font-size: 30px;
-    }
-    .contact .contact-content .right .icons {
-        width: 34px;
-           
     }
     
 }
