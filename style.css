@@ -260,7 +260,7 @@ section .title::after{
     content: "Desenvolvidos";
 }
 .projects .proj-content .card{
-    width: calc(33% - 20px);
+    width: calc(30% - 20px);
     background: #222;
     text-align: center;
     border-radius: 6px;
@@ -268,6 +268,7 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
 }
 .projects .proj-content .card:hover{
     background: #f1b8ff;
@@ -275,6 +276,22 @@ section .title::after{
 .servprojectsices .proj-content .card .box{
     transition: all 0.3s ease;
 }
+.projects .proj-content .card a{
+   color: #fff;
+}
+.projects .proj-content .card .box0{
+    padding: 2px 20px;
+}
+.projects .proj-content .card .box1{
+    padding: 40px 30px;
+}
+.projects .proj-content .card .box2{
+    padding: 25px 10px;
+}
+.projects .proj-content .card .box3{
+    padding: 38px 10px;
+}
+
 .projects .proj-content .card:hover .box{
     transform: scale(1.05);
 }
