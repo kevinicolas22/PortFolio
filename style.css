@@ -549,6 +549,7 @@ footer span a:hover{
         width: 290px;
            
     }
+
     footer{
         margin-top: -25px;
     }
@@ -582,5 +583,9 @@ footer span a:hover{
     .about .about-content .text{
        font-size: 30px;
     }
-    
+    .about .title::after{
+        margin: 90px 0 -25px 0;
+        background: none;
+    }
+
 }
