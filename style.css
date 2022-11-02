@@ -568,6 +568,11 @@ footer span a:hover{
     .home .home-content .text{
         font-size: 50px;
     }
+    .contact .contact-content .right .icons {
+        width: 34px;
+           
+    }
+    
 }
 @media (max-width: 500px){
     .home .home-content .text-2{
@@ -580,7 +585,7 @@ footer span a:hover{
        font-size: 30px;
     }
     .contact .contact-content .right .icons {
-        width: 340px;
+        width: 34px;
            
     }
     
