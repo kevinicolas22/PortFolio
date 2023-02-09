@@ -577,9 +577,9 @@ footer span a:hover{
         width: 550px;
 }
 }
-@media (max-width: 720px){
+@media (max-width: 750px){
     .contact .contact-content .right .icons{
-        width: 120px;
+        width: 10px;
     }
 }
 @media (max-width: 690px){
