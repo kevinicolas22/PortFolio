@@ -292,14 +292,9 @@ section .title::after{
     padding: 53px 10px;
 }
 .projects .proj-content .card .box4{
-    padding: 53px 10px;
+    padding: 2px 10px;
 }
-.projects .proj-content .card .box5{
-    padding: 62px 10px;
-}
-.projects .proj-content .card .box6{
-    padding: 77px 10px;
-}
+
 
 .projects .proj-content .card:hover .box{
     transform: scale(1.05);
