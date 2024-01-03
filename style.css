@@ -316,18 +316,28 @@ section .title::after{
 .skills .title::after{
     content: "Adquiridas";
 }
-.skills .skills-content .column{
+
+.skills .sub-title {
+    font-size: 22px;
+    font-weight: 550;
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .column {
     width: calc(50% - 30px);
     font-family: 'Roboto', sans-serif;
 }
+
 .skills .skills-content .left .text{
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 10px;
 }
+
 .skills .skills-content .left p{
     text-align: justify;
 }
+
 .skills .skills-content .left a{
     display: inline-block;
     background: #f1b8ff;
@@ -335,33 +345,39 @@ section .title::after{
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
-    margin-top: 20px;
+    margin-top: 60px;
     border-radius: 6px;
     border: 2px solid #f1b8ff;
     transition: all 0.3s ease;
 }
+
 .skills .skills-content .left a:hover{
     color: #f1b8ff;
     background: none;
 }
+
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
 }
+
 .skills .skills-content .right .info{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .skills .skills-content .right span{
     font-weight: 500;
     font-size: 18px;
 }
+
 .skills .skills-content .right .line{
     width: 100%;
     height: 5px;
     background: #ccc;
     position: relative;
 }
+
 .skills .skills-content .right .line::before{
     content: "";
     position: absolute;
@@ -371,23 +387,29 @@ section .title::after{
     left: 0;
     background: #f1b8ff;
 }
+
 .skills .skills-content .right .JavaScript::before{
-    width: 10%;
+    width: 3.57%;
 }
+
 .skills .skills-content .right .HTML::before{
-    width: 25%;
+    width: 45.40%;
 }
+
 .skills .skills-content .right .CSS::before{
-    width: 25%;
+    width: 4.49%;
 }
+
 .skills .skills-content .right .Python::before{
-    width: 15%;
+    width: 3.44%;
 }
+
 .skills .skills-content .right .C::before{
-    width: 15%;
+    width: 3.17%;
 }
+
 .skills .skills-content .right .Java::before{
-    width: 10%;
+    width: 39.93%;
 }
 
 /*  sessão Contato  */
@@ -434,12 +456,12 @@ background-color: #fff;
        
 }
 .contact .contact-content .right .icons{
+    margin: 66px 0;
     background-color: #222;
     border-radius: 8px;
     color: #f1b8ff;
-    margin-top: 64px;
-    width: 550px;
 }
+
 .contact .contact-content .row{
     display: flex;
     height: 65px;
@@ -564,15 +586,17 @@ footer span a:hover{
         width: 100%;
         margin-bottom: 35px;
     }
-    .contact .contact-content .right{
-        margin-left: -50px;
-        margin-top: -40px;
-         }
-    .contact .contact-content .right .icons {
-        width: 900px;
-        margin-top: 10px;
-           
+    .contact .contact-content .right {
+        margin-left: 0; 
+        margin-top: 20px;
     }
+    
+    .contact .contact-content .right .icons {
+        max-width: 100%; 
+        width: auto;
+        margin-top: 10px;
+    }
+    
 
     footer{
         margin-top: -25px;
