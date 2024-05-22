@@ -16,16 +16,16 @@ $(document).ready(function () {
     // Typed.js para o título principal
     var mainTyped = new Typed(".typing", {
         strings: ["Desenvolvedor", "Full Stack"],
-        typeSpeed: 180,
-        backSpeed: 90,
+        typeSpeed: 95,
+        backSpeed: 35,
         loop: true
     });
 
     // Typed.js para o título secundário
     var secondaryTyped = new Typed(".typing-2", {
-        strings: ["JavaScript", "Java", "Python", "C"],
-        typeSpeed: 180,
-        backSpeed: 90,
+        strings: ["JavaScript", "Java", "Clojure", "Python", "C", "Haskell", "Prolog", "SQL"],  
+        typeSpeed: 95,
+        backSpeed: 35,
         loop: true
     });
 

@@ -248,18 +248,27 @@ section .title::after{
 }
 
 /*sessão projetos*/
-.projects{
+.projects {
     background: #111;
     color: #fff;
 }
-.projects .title::before{
+
+.projects .title::before {
     background: #fff;
 }
-.projects .title::after{
+
+.projects .title::after {
     background: #111;
     content: "Desenvolvidos";
 }
-.projects .proj-content .card{
+
+.projects .proj-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projects .proj-content .card {
     width: calc(30% - 20px);
     background: #222;
     text-align: center;
@@ -269,48 +278,55 @@ section .title::after{
     transition: all 0.3s ease;
     font-family: 'Roboto', sans-serif;
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px; /* Define a altura mínima */
 }
-.projects .proj-content .card:hover{
+
+.projects .proj-content .card:hover {
     background: #f1b8ff;
 }
-.servprojectsices .proj-content .card .box{
+
+.projects .proj-content .card .box {
     transition: all 0.3s ease;
-}
-.projects .proj-content .card a{
-   color: #fff;
-}
-.projects .proj-content .card .box0{
-    padding: 2px 20px;
-}
-.projects .proj-content .card .box1{
-    padding: 40px 30px;
-}
-.projects .proj-content .card .box2{
-    padding: 25px 10px;
-}
-.projects .proj-content .card .box3{
-    padding: 53px 10px;
-}
-.projects .proj-content .card .box4{
-    padding: 2px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
+.projects .proj-content .card a {
+    color: #fff;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
 
-.projects .proj-content .card:hover .box{
+.projects .proj-content .card:hover .box {
     transform: scale(1.05);
 }
-.projects .proj-content .card ion-icon{
+
+.projects .proj-content .card ion-icon {
     font-size: 70px;
     color: #f1b8ff;
+    margin-bottom: 10px; /* Espaçamento entre o ícone e o texto */
 }
-.projects .proj-content .card:hover ion-icon{
+
+.projects .proj-content .card:hover ion-icon {
     color: #fff;
 }
-.projects .proj-content .card .text{
+
+.projects .proj-content .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
 
 /*Skills */
 .skills .title::after{
@@ -389,98 +405,111 @@ section .title::after{
 }
 
 .skills .skills-content .right .JavaScript::before{
-    width: 3.57%;
-}
-
-.skills .skills-content .right .HTML::before{
-    width: 45.40%;
+    width: 20%;
 }
 
 .skills .skills-content .right .CSS::before{
-    width: 4.49%;
+    width: 20%;
 }
 
 .skills .skills-content .right .Python::before{
-    width: 3.44%;
+    width: 35%;
 }
 
 .skills .skills-content .right .C::before{
-    width: 3.17%;
+    width: 5%;
 }
 
 .skills .skills-content .right .Java::before{
-    width: 39.93%;
+    width: 25%;
+}
+
+.skills .skills-content .right .Clojure::before{
+    width: 25%;
+}
+
+.skills .skills-content .right .SQL::before{
+    width: 30%;
+}
+
+.skills .skills-content .right .Haskell::before{
+    width: 40%;
+}
+
+.skills .skills-content .right .Prolog::before{
+    width: 40%;
 }
 
 /*  sessão Contato  */
-.contact{
+/* Sessão Contato */
+.contact {
     background-color: #111;
 }
-.contact .title{
+
+.contact .title {
     color: #fff;
 }
-.contact .title::before{
-background-color: #fff;
+
+.contact .title::before {
+    background-color: #fff;
 }
-.contact .title::after{
+
+.contact .title::after {
     content: "Fale Comigo";
     background-color: #111;
 }
-.contact .contact-content .column{
-    width: calc(50% - 30px);
-    color: #fff;
-}
-.contact .contact-content{
+
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: flex-start;
-    
 }
-.contact .contact-content .right{
-  margin-left: 600px;
-  margin-top: -388px;
+
+.contact .contact-content .column {
+    width: 48%; /* Ocupa 48% da largura para deixar um espaço de 4% entre as colunas */
+    color: #fff;
+    margin-bottom: 20px; /* Espaço entre as colunas e o conteúdo abaixo */
 }
-.contact .contact-content .left p, .contact .contact-content .right p{
+
+.contact .contact-content .left p,
+.contact .contact-content .right p {
     text-align: justify;
-    
 }
-.contact .contact-content .text{
+
+.contact .contact-content .text {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
-    
 }
-.contact .contact-content .left .icons {
+
+.contact .contact-content .icons {
     margin: 10px 0;
     background-color: #222;
     border-radius: 8px;
     color: #f1b8ff;
-       
-}
-.contact .contact-content .right .icons{
-    margin: 66px 0;
-    background-color: #222;
-    border-radius: 8px;
-    color: #f1b8ff;
+    padding: 15px; /* Espaçamento interno */
 }
 
-.contact .contact-content .row{
+.contact .contact-content .row {
     display: flex;
-    height: 65px;
     align-items: center;
-    
+    margin-bottom: 10px; /* Espaço entre as linhas */
 }
-.contact .contact-content .row .info{
-    margin-left: 30px
-    
+
+.contact .contact-content .row .info {
+    margin-left: 20px;
 }
-.contact .contact-content .row .info .head{
+
+.contact .contact-content .row .info .head {
     font-weight: 500;
-    
 }
-.contact .contact-content .row .info .sub-title{
+
+.contact .contact-content .row .info .sub-title {
     color: #fff;
-   
 }
-.contact .contact-content .row ion-icon{
+
+.contact .contact-content .row ion-icon {
     font-size: 25px;
     color: #f1b8ff;
 }
