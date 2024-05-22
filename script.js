@@ -12,7 +12,7 @@ $(document).ready(function () {
         // Anima o scroll para o topo da página
         $('html').animate({ scrollTop: 0 });
     });
-
+ 
     // Typed.js para o título principal
     var mainTyped = new Typed(".typing", {
         strings: ["Desenvolvedor", "Full Stack"],
