@@ -15,24 +15,37 @@ html{
     margin: auto;
 }
 
+/*cor dee fundo*/
+body, .home, .about, .projects, .skills, .contact{
+    background-color: #000;
+    color: #fff;
+}
+
 /*navbar início*/
 .navbar{
     position: fixed;
     width: 100%;
     padding: 30px 0; 
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; /* Define a fonte como negrito */
     z-index: 999;
     transition: all 0.3s ease;
+    color: #757575;
 }
 
 .navbar.sticky{
-    background: #f1b8ff;
+    background: #8892B0;
     padding: 15px 0;
+    color: #000;
 }
 .navbar .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.navbar.sticky .logo a {
+    color: #000; /* Cor do logo ao rolar a tela */
 }
 
 .navbar .logo a{
@@ -42,7 +55,7 @@ html{
 }
 
 .navbar .logo a span{
-    color: #f1b8ff;
+    color: #8892B0;
 
 }
 .navbar.sticky .logo a span{
@@ -63,22 +76,25 @@ html{
     transition: color 0.3s ease;
 }
 
-.navbar .menu li a:hover{
-  color: #f1b8ff;  
+.navbar .menu li a:hover {
+    color: #8892B0; /* Cor dos links ao passar o mouse */
 }
 
-.navbar.sticky .menu li a:hover{
-    color: #fff;
+.navbar.sticky .menu li a {
+    color: #000; /* Cor dos links ao rolar a tela */
+}
+
+.navbar.sticky .menu li a:hover {
+    color: #fff; /* Cor dos links ao passar o mouse quando sticky */
 }
 /*Home Início */
-.home{
+.home {
     display: flex;
-    background: url(image/banner.png) no-repeat;
-    background-size: cover;
     height: 100vh;
-    color: #fff;
     min-height: 500px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; /* Define a fonte como negrito */
+
 }
 
 .home .max-width{
@@ -86,44 +102,46 @@ html{
 }
 
 .home .home-content .text-1{
-    font-size: 27px;
+    font-size: 19px;
+    color: #8892B0;
 }
 
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 500;
     margin-right: -3px;
+    color: #CCD6F6;
 }
 
 .home .home-content .text-3{
-    font-size: 40px;
+    font-size: 70px;
     margin: 5px 0;
+    color: #8892B0;
 }
 
 .home .home-content .text-3 span{
-    color: #f1b8ff;
+    color: #8892B0;
     font-weight: 500;
 }
 
 .home .home-content a{
     display: inline-block;
-    background: #f1b8ff;
-    color: #fff;
+    color: #CCD6F6;
     font-size: 25px;
     padding: 9px 30px;
     margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #f1b8ff;
-    transition: all 0.3s ease;
+    border-radius: 12px;
+    border: 2px solid #8892B0;
+    transition: all 0.9s ease;
 }
 
 .home .home-content a:hover{
-    color:#f1b8ff;
-    background: none;
+    color:#8892B0;
+    background: #6773A6;
+    color: #000;
 }
 
 /* Menu Mobile*/
-/*  Menu  Mobile  */
 .menu-btn{
     color: #fff;
     font-size: 26px;
@@ -139,14 +157,14 @@ html{
     text-align: center;
     line-height: 50px;
     color: #fff;
-    background: #f1b8ff;
-    border-radius: 6px;
+    background: #8892B0;
+    border-radius: 25px;
     font-size: 30px;
     z-index: 9999;
     cursor: pointer;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .scroll-up-btn.show{
     bottom: 30px;
@@ -154,30 +172,21 @@ html{
     pointer-events:auto;
     
 }
-/*todos os códigos similares*/
+/*todos os códigos similares, títulos, textos*/
 section{
     padding: 100px 0;
 }
 
 section .title{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; /* Define a fonte como negrito */
     text-align: center;
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
     position: relative;
-}
-
-section .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: #111;
-    transform: translateX(-50%);
+    color: #CCD7F7;
 }
 
 section .title::after{
@@ -186,13 +195,18 @@ section .title::after{
     left: 50%;
     font-size: 20px;
     background: #fff;
-    color: #f1b8ff;
+    color: #8892B0;
     padding: 5px;
     transform: translateX(-50%);
 }
-.about, .projects, .skills, .contact, footer{
+
+.about {
+    color: #757575;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold; /* Define a fonte como negrito */
 }
+
+
 .about .about-content,
 .projects .proj-content, .skills .skills-content, .contact .contact-content{
     display: flex;
@@ -202,10 +216,11 @@ section .title::after{
 }
 
 /*sessão sobre*/
-
-
-.about .title::after{
-    content: "Quem eu sou?";
+.about .title-about{
+    color: #8892B0;
+}
+.about .subtitle-about{
+    color: #8892B0;
 }
 .about .about-content .left{
     width: 45%;
@@ -213,32 +228,48 @@ section .title::after{
 .about .about-content .right{
     width: 55%;
 }
+
+.about .about-content .right .text-title-about{
+    font-size: 40px;
+    font-weight: 500;
+    color: #CCD6F6;
+}
+
+.about .about-content .right .text-subtitle-about{
+    font-size: 40px;
+    font-weight: 500;
+    color: #8892B0;
+    margin-top: -7px;
+    margin-bottom: 18px;
+
+}
+
 .about .about-content .right .text{
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: #f1b8ff;
+    color: #8892B0;
 }
 .about .about-content .right p{
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    background: #f1b8ff;
-    color: #fff;
+    color: #CCD6F6;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #f1b8ff;
-    transition: all 0.3s ease; 
+    border-radius: 12px;
+    border: 2px solid #8892B0;
+    transition: all 0.9s ease; 
 }
 .about .about-content .right a:hover{
-   color: #f1b8ff;
-   background: none ; 
+   color: #8892B0;
+   background: #6773A6 ; 
+   color: #000;
 }
 .about .about-content .left img{
     width: 400px;
@@ -247,288 +278,415 @@ section .title::after{
     border-radius: 6px;
 }
 
-/*sessão projetos*/
+
+
+/*SESSÃO PROJETOS*/
 .projects {
-    background: #111;
-    color: #fff;
+    position: relative; /* Necessário para posicionar os botões dentro da seção */
 }
 
-.projects .title::before {
-    background: #fff;
-}
-
-.projects .title::after {
-    background: #111;
-    content: "Desenvolvidos";
-}
-
-.projects .proj-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.projects .proj-content .card {
-    width: calc(30% - 20px);
-    background: #222;
+.project-titles {
     text-align: center;
-    border-radius: 6px;
-    padding: 20px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 300px; /* Define a altura mínima */
 }
 
-.projects .proj-content .card:hover {
-    background: #f1b8ff;
-}
-
-.projects .proj-content .card .box {
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-.projects .proj-content .card a {
-    color: #fff;
-    text-decoration: none; /* Remove o sublinhado dos links */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    justify-content: center;
-}
-
-.projects .proj-content .card:hover .box {
-    transform: scale(1.05);
-}
-
-.projects .proj-content .card ion-icon {
-    font-size: 70px;
-    color: #f1b8ff;
-    margin-bottom: 10px; /* Espaçamento entre o ícone e o texto */
-}
-
-.projects .proj-content .card:hover ion-icon {
-    color: #fff;
-}
-
-.projects .proj-content .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-
-/*Skills */
-.skills .title::after{
-    content: "Adquiridas";
-}
-
-.skills .sub-title {
-    font-size: 22px;
-    font-weight: 550;
-    margin-bottom: 15px;
-}
-
-.skills .skills-content .column {
-    width: calc(50% - 30px);
-    font-family: 'Roboto', sans-serif;
-}
-
-.skills .skills-content .left .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-.skills .skills-content .left p{
-    text-align: justify;
-}
-
-.skills .skills-content .left a{
+.text-title-project,
+.text-subtitle-project {
     display: inline-block;
-    background: #f1b8ff;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 60px;
-    border-radius: 6px;
-    border: 2px solid #f1b8ff;
-    transition: all 0.3s ease;
-}
-
-.skills .skills-content .left a:hover{
-    color: #f1b8ff;
-    background: none;
-}
-
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
-}
-
-.skills .skills-content .right .info{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.skills .skills-content .right span{
-    font-weight: 500;
-    font-size: 18px;
-}
-
-.skills .skills-content .right .line{
-    width: 100%;
-    height: 5px;
-    background: #ccc;
-    position: relative;
-}
-
-.skills .skills-content .right .line::before{
-    content: "";
-    position: absolute;
-    width: 80%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #f1b8ff;
-}
-
-.skills .skills-content .right .JavaScript::before{
-    width: 20%;
-}
-
-.skills .skills-content .right .CSS::before{
-    width: 20%;
-}
-
-.skills .skills-content .right .Python::before{
-    width: 35%;
-}
-
-.skills .skills-content .right .C::before{
-    width: 5%;
-}
-
-.skills .skills-content .right .Java::before{
-    width: 25%;
-}
-
-.skills .skills-content .right .Clojure::before{
-    width: 25%;
-}
-
-.skills .skills-content .right .SQL::before{
-    width: 30%;
-}
-
-.skills .skills-content .right .Haskell::before{
-    width: 40%;
-}
-
-.skills .skills-content .right .Prolog::before{
-    width: 40%;
-}
-
-/*  sessão Contato  */
-/* Sessão Contato */
-.contact {
-    background-color: #111;
-}
-
-.contact .title {
-    color: #fff;
-}
-
-.contact .title::before {
-    background-color: #fff;
-}
-
-.contact .title::after {
-    content: "Fale Comigo";
-    background-color: #111;
-}
-
-.contact .contact-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.contact .contact-content .column {
-    width: 48%; /* Ocupa 48% da largura para deixar um espaço de 4% entre as colunas */
-    color: #fff;
-    margin-bottom: 20px; /* Espaço entre as colunas e o conteúdo abaixo */
-}
-
-.contact .contact-content .left p,
-.contact .contact-content .right p {
-    text-align: justify;
-}
-
-.contact .contact-content .text {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-.contact .contact-content .icons {
-    margin: 10px 0;
-    background-color: #222;
+    margin: 1px;
+    font-size: 27px;
+    font-weight: 600;
     border-radius: 8px;
-    color: #f1b8ff;
-    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 80px;
+    
 }
 
-.contact .contact-content .row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px; /* Espaço entre as linhas */
+.text-subtitle-project {
+    color: #8892B0;
 }
 
-.contact .contact-content .row .info {
-    margin-left: 20px;
-}
-
-.contact .contact-content .row .info .head {
-    font-weight: 500;
-}
-
-.contact .contact-content .row .info .sub-title {
+/* Estilos para os cards */
+.carousel-prev-btn, .carousel-next-btn {
+    background-color: transparent;
     color: #fff;
+    border: none;
+    font-size: 1.9em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    position: absolute; /* Posiciona os botões em relação ao container */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta o alinhamento vertical */
+    transition: none;
 }
 
-.contact .contact-content .row ion-icon {
-    font-size: 25px;
-    color: #f1b8ff;
+.carousel-prev-btn {
+    left: 500px; /* Ajuste a distância da borda esquerda conforme necessário */
+    margin-left: 10px; /* Adiciona espaço da borda direita */
+
+}
+
+.carousel-next-btn {
+    right: 307px; /* Ajuste a distância da borda direita conforme necessário */
+    margin-right: 10px; /* Adiciona espaço da borda direita */
+
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 1400px) {
+    .carousel-prev-btn {
+        left: 200px; /* Ajusta a distância da borda esquerda para telas menores */
+    }
+
+    .carousel-next-btn {
+        right: 30px; /* Ajusta a distância da borda direita para telas menores */
+    }
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 1200px) {
+    .carousel-prev-btn {
+        left: 150px; /* Ajusta a distância da borda esquerda para telas menores */
+    }
+
+    .carousel-next-btn {
+        right: 30px; /* Ajusta a distância da borda direita para telas menores */
+    }
+}
+
+@media (max-width: 992px) {
+    .carousel-prev-btn {
+        left: 100px; /* Ajusta a distância da borda esquerda para telas menores */
+    }
+
+    .carousel-next-btn {
+        right: 20px; /* Ajusta a distância da borda direita para telas menores */
+    }
 }
 
 
-/*  sessão footer  */
-footer{
-    background: #fff;
-    padding: 3px 2px;
-    color: #111;
+@media (max-width: 768px) {
+
+    .carousel-prev-btn {
+        left: 100px; /* Ajusta a distância da borda esquerda para telas menores */
+    }
+
+    .carousel-next-btn {
+        right: 270px; /* Ajusta a distância da borda direita para telas menores */
+        margin-right: -250px; /* Adiciona espaço da borda direita */
+
+    }
+}
+
+/* Ajustes para telas de celulares (menores que 576px) */
+@media (max-width: 576px) {
+    .carousel-prev-btn,
+    .carousel-next-btn {
+        left: -350px; /* Ajusta a distância da borda esquerda para telas de celulares */
+        right: -62px; /* Ajusta a distância da borda direita para telas de celulares */
+    }
+}
+
+.carousel-prev-btn:hover, .carousel-next-btn:hover {
+    background-color: none;
+}
+
+.carousel-prev-btn {
+    margin-left: -10%;
+
+}
+
+.carousel-next-btn {
+    margin-left: 100%; /* Empurra o botão Próximo para a direita */
+}
+
+/* Estilo do container dos cards */
+.cards-container {
+    flex: 1; /* Para ocupar todo o espaço disponível entre os botões */
+    overflow: hidden; /* Para esconder a rolagem horizontal dos cards */
+}
+
+/* Estilo dos cards individuais */
+.card {
+    min-height: 300px; /* Ajuste a altura mínima conforme necessário */
+    border-radius: 20px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    margin-left: 45px;
+    border: 2px solid #8892B0; /* Borda azul */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, background-color 0.3s ease; /*transição para a cor de fundo */
+    flex: 0 0 auto; /* Impede que os cards se expandam */
+    width: 300px; /* Largura fixa dos cards */
+    height: 300px; /* Altura fixa dos cards */
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do card ao passar o mouse */
+.card:hover {
+    transform: scale(1.05);
+    background-color: #8892B0; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 0 20px #ffffff78;
+    color: #000;
+    transition: 0.9s;
+}
+
+/* Estilo do conteúdo dentro do card */
+.card .box {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.card a {
+    text-decoration: none;
+    color: #333;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card ion-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #6773A6; /* Cor dos ícones */
+    transition: color 0.3s ease; /* Adiciona transição para a cor dos ícones */
+}
+
+.card:hover ion-icon {
+    color: #000; /* Cor dos ícones ao passar o mouse */
+}
+
+.card .text {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff; /* Cor padrão do texto */
+    transition: color 0.9s ease; /* Transição para a cor do texto */
+}
+
+.card:hover .text {
+    color: #000; /* Cor do texto ao passar o mouse */
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+    flex: 1;
+    margin-bottom: 0;
+    transition: color 0.3s ease; /* Transição para a cor do parágrafo */
+}
+
+.card:hover p {
+    color: #000; /* Cor do parágrafo ao passar o mouse */
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+section.especiliadades {
+    padding: 40px 4%;
+}
+
+section.especiliadades .flex {
+    gap: 10px; /* Reduzi o gap para manter a consistência com o novo tamanho fixo */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Tamanho fixo com flexibilidade */
+    grid-auto-rows: 1fr; /* Igualar a altura das caixas */
+}
+
+/* Responsivo: 1 caixa por linha em telas menores */
+@media (max-width: 1250px) {
+    section.especiliadades .flex {
+        grid-template-columns: 1fr; /* Apenas uma coluna */
+    }
+}
+
+.especiliadades .especialidades-box {
+    color: #757575;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px; /* Ajuste a altura mínima conforme necessário */
+    border: 2px solid #8892B0; /* Adiciona a borda com a cor desejada */
+    text-align: center; /* Centraliza o texto */
+}
+
+.especiliadades .especialidades-box:hover {
+    transform: scale(1.05);
+    background-color: #8892B0; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 0 20px #ffffff78;
+    color: #000;
+    transition: 0.9s;
+}
+
+.especiliadades .especialidades-box:hover i {
+    color: #000; /* Cor do ícone ao passar o mouse */
+}
+
+.especiliadades .especialidades-box i {
+    font-size: 70px;
+    color: #8892B0;
+}
+
+.especiliadades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+    font-family: 'Poppins', 
+
+}
+
+.especiliadades .especialidades-box p {
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold; /* Define a fonte como negrito */
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    text-align: justify; /* Justifica o texto */
+}
+
+/* ESTILO DO FORMULÁRIO DE CONTATO */
+section.formulario {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
     text-align: center;
 }
-footer span a{
-    color: #f1b8ff;
-    text-decoration: none;
+
+form .btn-enviar input {
+    max-width: 500px;
+    background-color: transparent; /* Remover a cor de fundo */
+    color: #CCD6F6; /* Mudar a cor do texto para branco */
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid #8892B0; /* Adicionar bordas roxas */
+    transition: .2s;
 }
-footer span a:hover{
-    text-decoration: underline;
+
+form .btn-enviar input:hover {
+    background-color: #8892B0; /* Preencher a cor ao passar o mouse por cima */
+    color: #000; /* Manter o texto branco */
 }
+
+
+/* ESTILO DO RODAPÉ */
+
+/* Estilo dos botões sociais */
+.btn-social {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente os botões */
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 35%;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+/* Botões com cores específicas */
+.btn-instagram {
+    background-color: #D43C7D ; /* Cor para Instagram */
+    color: #fff;
+}
+
+.btn-whatsapp {
+    background-color: #24D56A; /* Cor para whatsapp */
+    color: #fff;
+}
+
+.btn-linkedin {
+    background-color: #0077B5; /* Cor para LinkedIn */
+    color: #fff;
+}
+
+.btn-github {
+    background-color: #333; /* Cor para GitHub */
+    color: #fff;
+}
+
+.btn-social button:hover {
+    background-color: inherit; /* Manter a mesma cor ao passar o mouse */
+}
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+.line-footer {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 20px 0;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #8892B0;
+    box-shadow: 0 -13px 16px -8px #8892B0;
+}
+
+footer .line-footer p i {
+    color: #8892B0;
+    font-size: 22px;
+    
+}
+
+footer .line-footer p a {
+    color: #757575;
+}
+
+
+
+
+
+
 
 /*responsivo */
 
@@ -569,7 +727,7 @@ footer span a:hover{
         height: 100vh;
         left: -100%;
         top: 0;
-        background: #111;
+        background: #8892B0;
         padding-top: 80px;
         text-align: center;
         transition: all 0.3s ease;
@@ -624,11 +782,6 @@ footer span a:hover{
         max-width: 100%; 
         width: auto;
         margin-top: 10px;
-    }
-    
-
-    footer{
-        margin-top: -25px;
     }
 
 }
@@ -706,4 +859,246 @@ footer span a:hover{
         width: 210px;    
     }
 }
+
+
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; /* Define a fonte como negrito */
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #8892B0;
+}
+
+h3.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: justify;
+}
+
+h3.titulo span {
+    color: #8892B0;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #fff;
+    transform: scale(1.05);
+}
+
+
+/* ESTILO DO MENU MOBILE */
+
+.btn-abrir-menu{
+    display: none;
+}
+
+.btn-abrir-menu i{
+    color: #00FF08;
+    font-size: 40px;
+}
+
+.menu-mobile{
+    background-color: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i{
+    color: #00FF08;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}   
+
+.menu-mobile nav ul li a:hover{
+    background-color: #00FF08;
+    color: #000;
+}
+
+.overlay-menu{
+    background-color: #000000df;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 1020px) {
+
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    /* ESPECIALIDADES */
+    section.especiliadades {
+        padding: 40px 8%;
+    }
+
+    /* SOBRE */
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+    
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+    /* PORTFÓLIO */
+    section.portfolio {
+        padding: 80px 8%;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    
+    section.portfolio .flex {
+       gap: 60px;
+    }
+
+    /* RODAPÉ */
+    footer .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

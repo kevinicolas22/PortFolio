@@ -36,11 +36,11 @@ $(document).ready(function () {
         $('.menu-btn i').toggleClass("active");
     });
 
-    // Owl Carousel para Projetos
-    $('.carousel').owlCarousel({
+    var owl = $('.carousel').owlCarousel({
         margin: 20,
         loop: true,
-        autoplayTimeOut: 2000,
+        autoplay: false,
+        autoplayTimeout: 2000,
         autoplayHoverPause: true,
         responsive: {
             0: {
@@ -57,4 +57,59 @@ $(document).ready(function () {
             }
         }
     });
+
+    // Botão Anterior do Carrossel
+    $('.carousel-prev-btn').click(function() {
+        owl.trigger('prev.owl.carousel');
+    });
+
+    // Botão Próximo do Carrossel
+    $('.carousel-next-btn').click(function() {
+        owl.trigger('next.owl.carousel');
+    });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let btnMenu = document.getElementById('btn-menu')
+let menu = document.getElementById('menu-mobile')
+let overlay = document.getElementById('overlay-menu')
+
+btnMenu.addEventListener('click', ()=>{
+    menu.classList.add('abrir-menu')
+})
+
+menu.addEventListener('click', ()=>{
+    menu.classList.remove('abrir-menu')
+})
+
+overlay.addEventListener('click', ()=>{
+    menu.classList.remove('abrir-menu')
+})
