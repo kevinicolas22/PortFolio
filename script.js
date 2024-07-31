@@ -36,20 +36,23 @@ $(document).ready(function () {
         $('.menu-btn i').toggleClass("active");
     });
 
+    // Configurações do carrossel
     var owl = $('.carousel').owlCarousel({
         margin: 20,
         loop: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 2000,
         autoplayHoverPause: true,
         responsive: {
             0: {
                 items: 1,
-                nav: false
+                nav: false,
+                autoplay: false // Desativa autoplay para dispositivos móveis
             },
             600: {
                 items: 2,
-                nav: false
+                nav: false,
+                autoplay: false // Desativa autoplay para tablets
             },
             1000: {
                 items: 3,
@@ -69,35 +72,6 @@ $(document).ready(function () {
     });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let btnMenu = document.getElementById('btn-menu')
 let menu = document.getElementById('menu-mobile')
 let overlay = document.getElementById('overlay-menu')
@@ -112,4 +86,4 @@ menu.addEventListener('click', ()=>{
 
 overlay.addEventListener('click', ()=>{
     menu.classList.remove('abrir-menu')
-})
+});
