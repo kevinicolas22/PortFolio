@@ -447,7 +447,7 @@ section .title::after{
     .card {
         width: 225px; /* Ajuste a largura para telas de celulares */
         height: 410px; /* Ajuste a altura para telas de celulares */
-        margin-left: 20px;
+        margin-left: 35px;
     }
 }
 

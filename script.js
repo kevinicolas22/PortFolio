@@ -49,7 +49,7 @@ $(document).ready(function () {
                 nav: false,
                 autoplay: false // Desativa autoplay para dispositivos móveis
             },
-            600: {
+            576: {
                 items: 2,
                 nav: false,
                 autoplay: false // Desativa autoplay para tablets
