@@ -47,12 +47,14 @@ $(document).ready(function () {
             0: {
                 items: 1,
                 nav: false,
-                autoplay: false // Desativa autoplay para dispositivos móveis
+                autoplay: false, // Desativa autoplay para dispositivos móveis
+                autoplayTimeout: 200000
             },
             576: {
                 items: 2,
                 nav: false,
-                autoplay: false // Desativa autoplay para tablets
+                autoplay: false, // Desativa autoplay para tablets
+                autoplayTimeout: 200000
             },
             1000: {
                 items: 3,
