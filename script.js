@@ -40,8 +40,8 @@ $(document).ready(function () {
     var owl = $('.carousel').owlCarousel({
         margin: 20,
         loop: true,
-        autoplay: true,
-        autoplayTimeout: 2000,
+        autoplay: false,
+        autoplayTimeout: 200000,
         autoplayHoverPause: true,
         responsive: {
             0: {
