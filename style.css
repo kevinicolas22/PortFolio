@@ -422,7 +422,7 @@ section .title::after{
     transition: transform 0.3s ease, background-color 0.3s ease; /*transição para a cor de fundo */
     flex: 0 0 auto; /* Impede que os cards se expandam */
     width: 300px; /* Largura fixa dos cards */
-    height: 300px; /* Altura fixa dos cards */
+    height: 310px; /* Altura fixa dos cards */
     display: flex;
     flex-direction: column;
     text-align: center; /* Centraliza o texto */
@@ -432,7 +432,7 @@ section .title::after{
 @media (max-width: 992px) {
     .card {
         width: 250px; /* Ajuste a largura para telas menores */
-        height: 250px; /* Ajuste a altura para telas menores */
+        height: 410px; /* Ajuste a altura para telas menores */
     }
 }
 
@@ -446,10 +446,11 @@ section .title::after{
 @media (max-width: 576px) {
     .card {
         width: 200px; /* Ajuste a largura para telas de celulares */
-        height: 440px; /* Ajuste a altura para telas de celulares */
-        margin-left: 35px;
+        height: 470px; /* Ajuste a altura para telas de celulares */
+        margin: 20px auto; /* Centraliza a card horizontalmente e adiciona margem superior e inferior */
     }
 }
+
 
 
 /* Estilo do card ao passar o mouse */
