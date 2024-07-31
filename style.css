@@ -379,10 +379,14 @@ section .title::after{
 
 /* Ajustes para telas de celulares (menores que 576px) */
 @media (max-width: 576px) {
-    .carousel-prev-btn,
+    .carousel-prev-btn {
+        left: 80px; /* Ajusta a distância da borda esquerda para telas de celulares */
+        margin-left: 600px; /* Ajusta a distância da borda direita para telas de celulares */
+    }
+
     .carousel-next-btn {
-        left: -350px; /* Ajusta a distância da borda esquerda para telas de celulares */
-        right: -62px; /* Ajusta a distância da borda direita para telas de celulares */
+        right: 100px;
+        margin-right: -60px; /* Ajusta a distância da borda direita para telas de celulares */
     }
 }
 
@@ -423,6 +427,29 @@ section .title::after{
     flex-direction: column;
     text-align: center; /* Centraliza o texto */
 }
+
+/* Ajuste do tamanho dos cards para telas menores */
+@media (max-width: 992px) {
+    .card {
+        width: 250px; /* Ajuste a largura para telas menores */
+        height: 250px; /* Ajuste a altura para telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 200px; /* Ajuste a largura para telas menores */
+        height: 200px; /* Ajuste a altura para telas menores */
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 200px; /* Ajuste a largura para telas de celulares */
+        height: 460px; /* Ajuste a altura para telas de celulares */
+    }
+}
+
 
 /* Estilo do card ao passar o mouse */
 .card:hover {
@@ -681,10 +708,6 @@ footer .line-footer p i {
 footer .line-footer p a {
     color: #757575;
 }
-
-
-
-
 
 
 
