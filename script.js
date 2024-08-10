@@ -15,7 +15,7 @@ $(document).ready(function () {
  
     // Typed.js para o título principal
     var mainTyped = new Typed(".typing", {
-        strings: ["Desenvolvedor", "Full Stack"],
+        strings: ["Desenvolvedor", "Data Science"],
         typeSpeed: 95,
         backSpeed: 35,
         loop: true
