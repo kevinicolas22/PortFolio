@@ -77,15 +77,15 @@ body, .home, .about, .projects, .skills, .contact{
 }
 
 .navbar .menu li a:hover {
-    color: #8892B0; /* Cor dos links ao passar o mouse */
+    color: #8892B0; 
 }
 
 .navbar.sticky .menu li a {
-    color: #000; /* Cor dos links ao rolar a tela */
+    color: #000; 
 }
 
 .navbar.sticky .menu li a:hover {
-    color: #fff; /* Cor dos links ao passar o mouse quando sticky */
+    color: #fff; 
 }
 /*Home Início */
 .home {
@@ -93,7 +93,7 @@ body, .home, .about, .projects, .skills, .contact{
     height: 100vh;
     min-height: 500px;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold; /* Define a fonte como negrito */
+    font-weight: bold; 
 
 }
 
@@ -172,14 +172,13 @@ body, .home, .about, .projects, .skills, .contact{
     pointer-events:auto;
     
 }
-/*todos os códigos similares, títulos, textos*/
 section{
     padding: 100px 0;
 }
 
 section .title{
     font-family: 'Roboto', sans-serif;
-    font-weight: bold; /* Define a fonte como negrito */
+    font-weight: bold;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
@@ -297,7 +296,6 @@ section .title::after{
     font-weight: 600;
     border-radius: 8px;
     margin-bottom: 80px;
-    
 }
 
 .text-subtitle-project {
@@ -313,80 +311,69 @@ section .title::after{
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s ease;
-    position: absolute; /* Posiciona os botões em relação ao container */
-    top: 50%; /* Centraliza verticalmente */
-    transform: translateY(-50%); /* Ajusta o alinhamento vertical */
-    transition: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10; /* Garante que as setas fiquem acima dos outros elementos */
 }
 
 .carousel-prev-btn {
-    left: 500px; /* Ajuste a distância da borda esquerda conforme necessário */
-    margin-left: 10px; /* Adiciona espaço da borda direita */
-
+    left: 2%; /* Ajuste com porcentagem para que seja responsivo */
 }
 
 .carousel-next-btn {
-    right: 307px; /* Ajuste a distância da borda direita conforme necessário */
-    margin-right: 10px; /* Adiciona espaço da borda direita */
-
+    right: 2%; /* Ajuste com porcentagem para que seja responsivo */
 }
 
 /* Ajustes para telas menores */
 @media (max-width: 1400px) {
     .carousel-prev-btn {
-        left: 200px; /* Ajusta a distância da borda esquerda para telas menores */
+        left: 3%;
     }
-
     .carousel-next-btn {
-        right: 30px; /* Ajusta a distância da borda direita para telas menores */
+        right: 3%;
     }
 }
 
-/* Ajustes para telas menores */
 @media (max-width: 1200px) {
     .carousel-prev-btn {
-        left: 150px; /* Ajusta a distância da borda esquerda para telas menores */
+        left: 4%;
     }
-
     .carousel-next-btn {
-        right: 30px; /* Ajusta a distância da borda direita para telas menores */
+        right: 4%;
     }
 }
 
 @media (max-width: 992px) {
     .carousel-prev-btn {
-        left: 100px; /* Ajusta a distância da borda esquerda para telas menores */
+        left: 5%;
     }
-
     .carousel-next-btn {
-        right: 20px; /* Ajusta a distância da borda direita para telas menores */
+        right: 5%;
     }
 }
-
 
 @media (max-width: 768px) {
-
-    .carousel-prev-btn {
-        left: 100px; /* Ajusta a distância da borda esquerda para telas menores */
+    .carousel-prev-btn, .carousel-next-btn {
+        font-size: 1.5em; /* Reduz o tamanho das setas em telas menores */
     }
-
+    .carousel-prev-btn {
+        left: 6%;
+    }
     .carousel-next-btn {
-        right: 270px; /* Ajusta a distância da borda direita para telas menores */
-        margin-right: -250px; /* Adiciona espaço da borda direita */
-
+        right: 6%;
     }
 }
 
-/* Ajustes para telas de celulares (menores que 576px) */
 @media (max-width: 576px) {
-    .carousel-prev-btn {
-        left: 80px; /* Ajusta a distância da borda esquerda para telas de celulares */
-        margin-left: 600px; /* Ajusta a distância da borda direita para telas de celulares */
+    .carousel-prev-btn, .carousel-next-btn {
+        font-size: 1.3em; /* Reduz o tamanho das setas ainda mais em telas menores */
     }
-
+    .carousel-prev-btn {
+        left: 8%;
+    }
     .carousel-next-btn {
-        right: 100px;
-        margin-right: -60px; /* Ajusta a distância da borda direita para telas de celulares */
+        right: 8%;
     }
 }
 
@@ -394,81 +381,65 @@ section .title::after{
     background-color: none;
 }
 
-.carousel-prev-btn {
-    margin-left: -10%;
-
-}
-
-.carousel-next-btn {
-    margin-left: 100%; /* Empurra o botão Próximo para a direita */
-}
-
-/* Estilo do container dos cards */
 .cards-container {
-    flex: 1; /* Para ocupar todo o espaço disponível entre os botões */
-    overflow: hidden; /* Para esconder a rolagem horizontal dos cards */
+    flex: 1;
+    overflow: hidden;
 }
 
-/* Estilo dos cards individuais */
 .card {
-    min-height: 300px; /* Ajuste a altura mínima conforme necessário */
+    min-height: 300px;
     border-radius: 20px;
     margin-top: 45px;
     margin-bottom: 45px;
     margin-left: 45px;
-    border: 2px solid #8892B0; /* Borda azul */
+    border: 2px solid #8892B0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.3s ease, background-color 0.3s ease; /*transição para a cor de fundo */
-    flex: 0 0 auto; /* Impede que os cards se expandam */
-    width: 300px; /* Largura fixa dos cards */
-    height: 310px; /* Altura fixa dos cards */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    flex: 0 0 auto;
+    width: 300px;
+    height: 310px;
     display: flex;
     flex-direction: column;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
 }
 
-/* Ajuste do tamanho dos cards para telas menores */
 @media (max-width: 992px) {
     .card {
-        width: 250px; /* Ajuste a largura para telas menores */
-        height: 410px; /* Ajuste a altura para telas menores */
+        width: 250px;
+        height: 410px;
     }
 }
 
 @media (max-width: 768px) {
     .card {
-        width: 200px; /* Ajuste a largura para telas menores */
-        height: 200px; /* Ajuste a altura para telas menores */
+        width: 200px;
+        height: 200px;
     }
 }
 
 @media (max-width: 576px) {
     .card {
-        width: 200px; /* Ajuste a largura para telas de celulares */
-        height: 470px; /* Ajuste a altura para telas de celulares */
-        margin: 20px auto; /* Centraliza a card horizontalmente e adiciona margem superior e inferior */
+        width: 200px;
+        height: 470px;
+        margin: 20px auto;
     }
 }
 
-
-
-/* Estilo do card ao passar o mouse */
 .card:hover {
     transform: scale(1.05);
-    background-color: #8892B0; /* Cor de fundo ao passar o mouse */
+    background-color: #8892B0;
     box-shadow: 0 0 20px #ffffff78;
     color: #000;
     transition: 0.9s;
 }
 
-/* Estilo do conteúdo dentro do card */
 .card .box {
     padding: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center;
 }
 
 .card a {
@@ -482,24 +453,24 @@ section .title::after{
 .card ion-icon {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #6773A6; /* Cor dos ícones */
-    transition: color 0.3s ease; /* Adiciona transição para a cor dos ícones */
+    color: #6773A6;
+    transition: color 0.3s ease;
 }
 
 .card:hover ion-icon {
-    color: #000; /* Cor dos ícones ao passar o mouse */
+    color: #000;
 }
 
 .card .text {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #fff; /* Cor padrão do texto */
-    transition: color 0.9s ease; /* Transição para a cor do texto */
+    color: #fff;
+    transition: color 0.9s ease;
 }
 
 .card:hover .text {
-    color: #000; /* Cor do texto ao passar o mouse */
+    color: #000;
 }
 
 .card p {
@@ -508,12 +479,13 @@ section .title::after{
     line-height: 1.5;
     flex: 1;
     margin-bottom: 0;
-    transition: color 0.3s ease; /* Transição para a cor do parágrafo */
+    transition: color 0.3s ease;
 }
 
 .card:hover p {
-    color: #000; /* Cor do parágrafo ao passar o mouse */
+    color: #000;
 }
+
 
 /* ESTILO DAS ESPECIALIDADES */
 section.especiliadades {
